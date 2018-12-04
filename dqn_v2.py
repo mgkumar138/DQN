@@ -199,7 +199,7 @@ def main():
     plt.ylabel('Total Reward per Episode')
     plt.title('DQNv2 Breakout {}eps'.format(episodes))
     plt.plot(list(range(1, episodes + 1)), tot_t)
-    plt.legend()
+    plt.legend(['reward','time'])
     if save_plot == 'y':
         plt.savefig(
             'C:\\Users\\User\\PycharmProjects\\GaneshLearning\\ReinforcementLearning\\DQN\\CartPole_{}eps.png'.format(
